@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ZenithAcademyApp</title>
+  <%= stylesheet_link_tag 'application', "https://fonts.googleapis.com/css?family=Montserrat" %>
+  <%= stylesheet_link_tag 'application', "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="header">
+      <div class="container">
+        <ul class="nav">
+          <li>Academy</li>
+          <li>admission</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+<%= yield %>
+ <div class="footer">
+      <div class="container">
+        <p>© Zenith Academy 2016</p>
+      </div>
+    </div>
+
+</body>
+</html>
